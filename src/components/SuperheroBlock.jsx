@@ -10,6 +10,7 @@ function SuperheroBlock({
   origin_description,
   superpowers,
   catch_phrase,
+  images
 }) {
     const [isShown, setIsShown] = React.useState(false);
     
@@ -23,7 +24,7 @@ function SuperheroBlock({
 
   return (
     <div className="superhero-block">
-      {/*<img className="product-block__image" src={imageUrl} alt="smth" />*/}
+      <img className="product-block__image" src={images} alt="smth" />
 
       <h4 className="superhero-block__title">{nickname}</h4>
   
